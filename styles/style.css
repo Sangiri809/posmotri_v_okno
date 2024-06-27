@@ -43,8 +43,7 @@ ol {
 .content {
   display: flex;
   justify-content: center;
-  width: 1140px;
-  height: 534px;
+  inline-size: 1140px;
   gap: 30px;
 }
 
@@ -53,8 +52,6 @@ ol {
   margin-top: 73px;
   flex-direction: column;
   justify-content: space-between;
-  width: 711px;
-  height: 456px;
 }
 
 .result__video-container {
@@ -91,7 +88,7 @@ ol {
 
 .search-form__textfield {
   background-color: transparent;
-  width: 225px;
+  min-width: 225px;
   font-family: 'Fira Sans Condensed', Oswald, sans-serif;
   border: none;
   border-bottom: inset 1px;
@@ -100,7 +97,7 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255);
   appearance: none;
 }
 
@@ -165,7 +162,6 @@ ol {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   gap: 6px;
 }
 
@@ -175,14 +171,18 @@ ol {
   flex-direction: column;
   height: 298px;
   overflow-y: auto;
-  gap: 22px;
+  scrollbar-width: none;
+}
+
+.content__list-item {
+  margin-block-end: 22px;
+  cursor: pointer;
 }
 
 .content__video-card {
   display: flex;
   align-items: center;
   width: 394px;
-  padding: 2px 0px 4px 2px;
 }
 
 .content__video-card-thumbnail {
@@ -190,7 +190,6 @@ ol {
   width: 194px;
   height: 110px;
   object-fit: cover;
-  object-position: 0px -6px;
 }
 
 .visually-hidden {
@@ -275,30 +274,32 @@ ol {
   text-decoration: underline;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .button:focus-visible {
   outline: 1px solid;
   outline-offset: 1px;
 }
 
-.button:focus {
-  outline: none;
-}
-
 .more-button {
-  padding: 5px 141px;
+  inline-size: 399px;
+  block-size: 34px;
   margin-bottom: 2px;
   margin-left: 2px;
 }
 
 .search-form__submit-button {
-  padding: 4px 71.5px;
+  inline-size: 194px;
+  block-size: 34px;
 }
 
 .content__card-link:active {
   background-color: rgba(84, 80, 80, 1);
 }
 
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: rgba(84, 80, 80, 1);
 }
 
