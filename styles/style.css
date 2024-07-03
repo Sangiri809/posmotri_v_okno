@@ -170,31 +170,18 @@ ol {
   flex-direction: column;
   height: 298px;
   overflow-y: auto;
-<<<<<<< HEAD
 }
 
 .content__list-item {
   margin-block-end: 30px;
-=======
-  scrollbar-width: none;
-}
-
-.content__list-item {
-  margin-block-end: 22px;
->>>>>>> befcb33d3d5529d185680d5f636a705ff1d586a9
   cursor: pointer;
 }
 
 .content__video-card {
   padding: 2px 0;
   display: flex;
-<<<<<<< HEAD
   align-items: start;
   width: 100%;
-=======
-  align-items: center;
-  width: 394px;
->>>>>>> befcb33d3d5529d185680d5f636a705ff1d586a9
 }
 
 .content__video-card-thumbnail {
